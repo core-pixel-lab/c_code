@@ -1,15 +1,24 @@
 #include <stdio.h>
 #include "../include/demo01.h"
 
-test demo01;
+branch_data bra;
+leaf_data lea[3];
 
 int main(int argc, char const *argv[])
 {
-    demo01.id = 1;
-    demo01.num = 0.5;
+    bra.id = 0;
+    bra.head = &lea[0];
+    for(int i = 0; i < 3; i++)
+    {
+        lea[i].id = i+1;
+        
+        if(i = 2)
+        continue;
+
+        lea[i].next = &lea[i];
+    }
+
     printf("Hello,world!\n");
-    printf("The id of demo01 is %d,\n",demo01.id);
-    printf("the num of demo01 is %f.\n",demo01.num);
 
     return 0;
 }
