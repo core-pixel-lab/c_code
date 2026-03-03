@@ -8,17 +8,19 @@ int main(int argc, char const *argv[])
 {
     bra.id = 0;
     bra.head = &lea[0];
+    printf("%d\n",bra.id);
     for(int i = 0; i < 3; i++)
     {
         lea[i].id = i+1;
-        
+
+        if(i < 2)
+        printf("%d\n",lea[i].id);
+
         if(i = 2)
         continue;
 
         lea[i].next = &lea[i];
     }
-
-    printf("Hello,world!\n");
 
     return 0;
 }
