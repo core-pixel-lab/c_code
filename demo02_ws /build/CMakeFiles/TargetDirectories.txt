@@ -1,3 +1,0 @@
-/home/qiyehwzi/c_code/demo01_ws/build/CMakeFiles/demo01.dir
-/home/qiyehwzi/c_code/demo01_ws/build/CMakeFiles/edit_cache.dir
-/home/qiyehwzi/c_code/demo01_ws/build/CMakeFiles/rebuild_cache.dir
